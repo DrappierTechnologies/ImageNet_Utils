@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49874aff-90c8-4f0a-9f2a-da816505d838}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>bbox_helper.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+    <CommandLineArguments>--downloadImages --wnid n02084071</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bbox_helper.py" />
+    <Compile Include="boxesCvtPascaltoDlib.py" />
+    <Compile Include="detection_eval_tools\gt_det.py" />
+    <Compile Include="detection_eval_tools\reorder_meta.py" />
+    <Compile Include="downloadutils.py" />
+    <Compile Include="labelcreator.py" />
+    <Compile Include="labelImgGUI\freeze_build.py" />
+    <Compile Include="labelImgGUI\labelImg.py" />
+    <Compile Include="labelImgGUI\libs\canvas.py" />
+    <Compile Include="labelImgGUI\libs\colorDialog.py" />
+    <Compile Include="labelImgGUI\libs\labelDialog.py" />
+    <Compile Include="labelImgGUI\libs\labelFile.py" />
+    <Compile Include="labelImgGUI\libs\lib.py" />
+    <Compile Include="labelImgGUI\libs\pascal_voc_io.py" />
+    <Compile Include="labelImgGUI\libs\shape.py" />
+    <Compile Include="labelImgGUI\libs\toolBar.py" />
+    <Compile Include="labelImgGUI\libs\zoomWidget.py" />
+    <Compile Include="labelImgGUI\_init_path.py" />
+    <Compile Include="libs\imagedownloader.py" />
+    <Compile Include="libs\pref_utils.py" />
+    <Compile Include="_init_paths.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo\demo.png" />
+    <Content Include="labelImgGUI\contributors.txt" />
+    <Content Include="labelImgGUI\data\predefined_classes.txt" />
+    <Content Include="labelImgGUI\icons\cancel.png" />
+    <Content Include="labelImgGUI\icons\close.png" />
+    <Content Include="labelImgGUI\icons\color.png" />
+    <Content Include="labelImgGUI\icons\color_line.png" />
+    <Content Include="labelImgGUI\icons\copy.png" />
+    <Content Include="labelImgGUI\icons\delete.png" />
+    <Content Include="labelImgGUI\icons\demo.png" />
+    <Content Include="labelImgGUI\icons\done.png" />
+    <Content Include="labelImgGUI\icons\done.svg" />
+    <Content Include="labelImgGUI\icons\edit.png" />
+    <Content Include="labelImgGUI\icons\expert1.png" />
+    <Content Include="labelImgGUI\icons\expert2.png" />
+    <Content Include="labelImgGUI\icons\eye.png" />
+    <Content Include="labelImgGUI\icons\feBlend-icon.png" />
+    <Content Include="labelImgGUI\icons\file.png" />
+    <Content Include="labelImgGUI\icons\fit-width.png" />
+    <Content Include="labelImgGUI\icons\fit-window.png" />
+    <Content Include="labelImgGUI\icons\fit.png" />
+    <Content Include="labelImgGUI\icons\help.png" />
+    <Content Include="labelImgGUI\icons\labels.png" />
+    <Content Include="labelImgGUI\icons\labels.svg" />
+    <Content Include="labelImgGUI\icons\new.png" />
+    <Content Include="labelImgGUI\icons\next.png" />
+    <Content Include="labelImgGUI\icons\objects.png" />
+    <Content Include="labelImgGUI\icons\open.png" />
+    <Content Include="labelImgGUI\icons\open.svg" />
+    <Content Include="labelImgGUI\icons\prev.png" />
+    <Content Include="labelImgGUI\icons\quit.png" />
+    <Content Include="labelImgGUI\icons\save-as.png" />
+    <Content Include="labelImgGUI\icons\save-as.svg" />
+    <Content Include="labelImgGUI\icons\save.png" />
+    <Content Include="labelImgGUI\icons\save.svg" />
+    <Content Include="labelImgGUI\icons\undo-cross.png" />
+    <Content Include="labelImgGUI\icons\undo.png" />
+    <Content Include="labelImgGUI\icons\zoom-in.png" />
+    <Content Include="labelImgGUI\icons\zoom-out.png" />
+    <Content Include="labelImgGUI\icons\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="demo" />
+    <Folder Include="detection_eval_tools" />
+    <Folder Include="labelImgGUI" />
+    <Folder Include="labelImgGUI\data" />
+    <Folder Include="labelImgGUI\icons" />
+    <Folder Include="labelImgGUI\libs" />
+    <Folder Include="libs" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
