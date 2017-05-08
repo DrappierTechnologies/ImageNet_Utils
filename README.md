@@ -1,4 +1,4 @@
-# ImageNet-Utils
+# ImageNet-Utils for Python 3.X
 Utils to help download images, crop bounding box, GUI tool to annotate image in XML file etc.
 
 Grap the source
@@ -26,7 +26,7 @@ Utils to create train.txt, val.txt, and test.txt
 
 Format: [FilePath] [id]
 
-Use the bellow cmd, and you can get image path and its label in train.txt and test.txt
+Use the cmd below, and you can get image path and its label in train.txt and test.txt
 
 `$ ./labelcreator.py --size_of_train 1400 --size_of_test 200  --label 11 --dir ./car`
 
