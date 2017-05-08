@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{49874aff-90c8-4f0a-9f2a-da816505d838}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>bbox_helper.py</StartupFile>
+    <StartupFile>downloadutils.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -15,6 +15,7 @@
     <InterpreterVersion />
     <CommandLineArguments>--downloadImages --wnid n02084071</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />

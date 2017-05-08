@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import os
-import Image
 import sys
 import zipfile
 import xml.etree.ElementTree as ET
 import argparse
+from PIL import Image
 
 def scanAnnotationFolder(annotationFolderPath):
     annotationFiles = []

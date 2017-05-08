@@ -4,6 +4,7 @@ import time
 import tarfile
 
 if sys.version_info >= (3,):
+    import urllib
     import urllib.request as urllib2
     import urllib.parse as urlparse
 else:
@@ -75,8 +76,8 @@ class ImageNetDownloader:
 
     def getImageURLsOfWnid(self, wnid):
         url = 'http://www.image-net.org/api/text/imagenet.synset.geturls?wnid=' + str(wnid)
-        f = urllib.urlopen(url)
-        contents = f.read().split('\n')
+        f = urllib.request.urlopen(url)
+        contents = f.read().decode().split('\n')
         imageUrls = []
 
         for each_line in contents:
