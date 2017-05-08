@@ -87,6 +87,8 @@
     <Content Include="labelImgGUI\icons\zoom-in.png" />
     <Content Include="labelImgGUI\icons\zoom-out.png" />
     <Content Include="labelImgGUI\icons\zoom.png" />
+    <Content Include="LICENSE.md" />
+    <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="demo" />
