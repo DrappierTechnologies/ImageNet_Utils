@@ -47,7 +47,17 @@
     <Compile Include="_init_paths.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".gitmodules" />
     <Content Include="demo\demo.png" />
+    <Content Include="demo\dlibDetBoxes.xml" />
+    <Content Include="demo\pascalBoxes\2008_004649.xml" />
+    <Content Include="demo\pascalBoxes\2008_004653.xml" />
+    <Content Include="demo\pascalBoxes\2008_004654.xml" />
+    <Content Include="demo\pascalBoxes\2008_004732.xml" />
+    <Content Include="detection_eval_tools\README.md" />
+    <Content Include="detection_eval_tools\structure_released.xml" />
+    <Content Include="labelImgGUI\.gitignore" />
     <Content Include="labelImgGUI\contributors.txt" />
     <Content Include="labelImgGUI\data\predefined_classes.txt" />
     <Content Include="labelImgGUI\icons\cancel.png" />
@@ -87,11 +97,16 @@
     <Content Include="labelImgGUI\icons\zoom-in.png" />
     <Content Include="labelImgGUI\icons\zoom-out.png" />
     <Content Include="labelImgGUI\icons\zoom.png" />
+    <Content Include="labelImgGUI\LICENSE.md" />
+    <Content Include="labelImgGUI\Makefile" />
+    <Content Include="labelImgGUI\README.md" />
+    <Content Include="labelImgGUI\resources.qrc" />
     <Content Include="LICENSE.md" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="demo" />
+    <Folder Include="demo\pascalBoxes\" />
     <Folder Include="detection_eval_tools" />
     <Folder Include="labelImgGUI" />
     <Folder Include="labelImgGUI\data" />
